@@ -21,4 +21,15 @@ class JokeFactory
     {
         return $this->jokes[array_rand($this->jokes)];
     }
+
+    public function getRandomJokes($amount = 1) : array
+    {
+        $out = [];
+
+        for ($i = 0; $i < $amount; $i++) {
+            $out[] =  $this->jokes[array_rand($this->jokes)];
+        }
+
+        return $out;
+    }
 }

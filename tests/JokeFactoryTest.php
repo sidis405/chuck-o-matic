@@ -34,4 +34,14 @@ class JokeFactoryTest extends TestCase
 
         $this->assertContains($joke, $defaultJokes);
     }
+
+    /** @test */
+    public function it_returns_a_given_amount_of_jokes()
+    {
+        $jokes = new JokeFactory;
+
+        $jokes = $jokes->getRandomJokes(2);
+
+        $this->assertEquals(2, count($jokes));
+    }
 }
