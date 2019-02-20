@@ -7,7 +7,7 @@ class JokeFactory
     protected $jokes = [
         'Chuck Norris counted to infinity... Twice.',
         'When the Boogeyman goes to sleep at night he checks his closet for Chuck Norris.',
-        'Guns don\'t kill people. Chuck Norris kills People.'
+        'Guns don\'t kill people. Chuck Norris kills People.',
     ];
 
     public function __construct($jokes = null)
@@ -27,7 +27,7 @@ class JokeFactory
         $out = [];
 
         for ($i = 0; $i < $amount; $i++) {
-            $out[] =  $this->jokes[array_rand($this->jokes)];
+            $out[] = $this->jokes[array_rand($this->jokes)];
         }
 
         return $out;

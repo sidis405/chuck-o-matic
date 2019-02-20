@@ -11,7 +11,7 @@ class JokeFactoryTest extends TestCase
     public function it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
-            'This is a joke'
+            'This is a joke',
         ]);
 
         $joke = $jokes->getRandomJoke();
@@ -25,7 +25,7 @@ class JokeFactoryTest extends TestCase
         $defaultJokes = [
             'Chuck Norris counted to infinity... Twice.',
             'When the Boogeyman goes to sleep at night he checks his closet for Chuck Norris.',
-            'Guns don\'t kill people. Chuck Norris kills People.'
+            'Guns don\'t kill people. Chuck Norris kills People.',
         ];
 
         $jokes = new JokeFactory;
